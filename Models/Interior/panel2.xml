@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+ <animation>
+        <type>range</type>
+        <min-m>0</min-m>
+        <max-m>50</max-m>
+    </animation>
+
+<!-- screens -->
+
+<model>
+    <name>mfd1</name>
+    <path>Aircraft/UH-60/Models/Interior/Panels/Instruments/RMFD/RMFD.xml</path>
+    <offsets>
+      <x-m> -0.030 </x-m>
+      <y-m> 0.350 </y-m>
+      <z-m> 0.05 </z-m>
+	  <pitch-deg>-0</pitch-deg>
+
+    </offsets>
+	
+  </model>
+  
+  <model>
+    <name>mfd2</name>
+    <path>Aircraft/UH-60/Models/Interior/Panels/Instruments/LMFD/LMFD.xml</path>
+    <offsets>
+      <x-m> -0.030 </x-m>
+      <y-m> -0.15 </y-m>
+      <z-m> 0.05 </z-m>
+	  <pitch-deg>-0</pitch-deg>
+
+    </offsets>
+	
+  </model>
+
+
+ 
+   <!-- RadarALT --> 
+  <model>
+    <path>Aircraft/UH-60/Models/Interior/Panels/Instruments/radar-alt/alt.xml</path>
+    <offsets>
+      <x-m> -0.030 </x-m>
+      <y-m> 0.770 </y-m>
+      <z-m> 0.100 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/UH-60/Models/Interior/Panels/Instruments/radar-alt/alt.xml</path>
+    <offsets>
+      <x-m> -0.03 </x-m>
+      <y-m> -0.450 </y-m>
+      <z-m> 0.100 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+  <!-- ALT --> 
+  <model>
+    <path>Aircraft/UH-60/Models/Interior/Panels/Instruments/alt/alt.xml</path>
+    <offsets>
+      <x-m> -0.030 </x-m>
+      <y-m> 0.770 </y-m>
+      <z-m> 0.005 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/UH-60/Models/Interior/Panels/Instruments/alt/alt.xml</path>
+    <offsets>
+      <x-m> -0.04 </x-m>
+     <y-m> -0.450 </y-m>
+      <z-m> 0.005 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- VSI --> 
+  <model>
+    <path>Aircraft/UH-60/Models/Interior/Panels/Instruments/vsi/vsi-6kfpm.xml</path>
+    <offsets>
+      <x-m> -0.030 </x-m>
+      <y-m> 0.770 </y-m>
+      <z-m> -0.085 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/UH-60/Models/Interior/Panels/Instruments/vsi/vsi-6kfpm.xml</path>
+    <offsets>
+      <x-m> -0.04 </x-m>
+     <y-m> -0.450 </y-m>
+      <z-m> -0.084 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+
+  <!-- HSI --> 
+  <model>
+     <path>Aircraft/UH-60/Models/Interior/Panels/Instruments/hsi/A-10-HSI.xml</path>
+    <offsets>
+      <x-m> -0.025 </x-m>
+      <y-m> 0.650 </y-m>
+      <z-m> -0.060 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+     <path>Aircraft/UH-60/Models/Interior/Panels/Instruments/hsi/A-10-HSI.xml</path>
+    <offsets>
+      <x-m> -0.030 </x-m>
+      <y-m> -0.585 </y-m>
+      <z-m> -0.060 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- AI --> 
+  <model>
+    <path>Aircraft/UH-60/Models/Interior/Panels/Instruments/adi/adi.xml</path>
+    <offsets>
+      <x-m> -0.01 </x-m>
+      <y-m> 0.650 </y-m>
+      <z-m> 0.085 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/UH-60/Models/Interior/Panels/Instruments/adi/adi.xml</path>
+    <offsets>
+      <x-m> -0.025 </x-m>
+       <y-m> -0.585 </y-m>
+      <z-m> 0.085 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+  <!-- ASI --> 
+  <model>
+    <path>Aircraft/UH-60/Models/Interior/Panels/Instruments/asi/asi.xml</path>
+    <offsets>
+      <x-m> -0.030 </x-m>
+      <y-m> 0.530 </y-m>
+      <z-m> 0.100 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/UH-60/Models/Interior/Panels/Instruments/asi/asi.xml</path>
+    <offsets>
+      <x-m> -0.035</x-m>
+      <y-m> -0.705 </y-m>
+      <z-m> 0.100 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!--rpm_trq-->
+  <model>
+    <path>Aircraft/UH-60/Models/Interior/Panels/Instruments/rpm_trq/prop-rpm.xml</path>
+    <offsets>
+      <x-m> -0.040 </x-m>
+      <y-m> 0.530 </y-m>
+      <z-m> 0.005 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!--rpm_trq-->
+  <model>
+    <path>Aircraft/UH-60/Models/Interior/Panels/Instruments/rpm_trq/prop-rpm.xml</path>
+    <offsets>
+      <x-m> -0.040 </x-m>
+       <y-m> -0.3 </y-m>
+      <z-m> 0.09 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+
+
+<!--clock-->
+  <model>
+    <path>Aircraft/UH-60/Models/Interior/Panels/Instruments/chronograph/chronograph.xml</path>
+    <offsets>
+      <x-m> -0.04 </x-m>
+     <y-m> 0.165 </y-m>
+      <z-m> -0.013 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/UH-60/Models/Interior/Panels/Instruments/chronograph/chronograph.xml</path>
+    <offsets>
+     <x-m>-0.04 </x-m>
+      <y-m> -0.3 </y-m>
+      <z-m> -0.073 </z-m>
+      <roll-deg>  0 </roll-deg>
+      <pitch-deg>  0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!--combination-meter-->
+  <model>
+    <path>Aircraft/UH-60/Models/Interior/Panels/Instruments/combimeter/combimeter.xml</path>
+    <offsets>
+      <x-m> -0.035 </x-m>
+      <y-m> 0.08 </y-m>
+      <z-m> 0.120 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+<!--  STABIPOSITION  -->
+  <model>
+    <path>Aircraft/UH-60/Models/Interior/Panels/Instruments/stab-pos/stab-pos.xml</path>
+    <offsets>
+      <x-m> -0.035 </x-m>
+      <y-m> 0.15 </y-m>
+      <z-m> -0.177 </z-m>
+      <roll-deg>  0 </roll-deg>
+      <pitch-deg>  0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/UH-60/Models/Interior/Panels/Instruments/stab-pos/stab-pos.xml</path>
+    <offsets>
+     <x-m> -0.035 </x-m>
+      <y-m> -0.15 </y-m>
+      <z-m> -0.177 </z-m>
+      <roll-deg>  0 </roll-deg>
+      <pitch-deg>  0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+  
+  
+  <!--  SPZ -->
+  <model>
+    <path>Aircraft/UH-60/Models/Interior/Panels/Instruments/spz700/spz700.xml</path>
+    <offsets>
+      <x-m>-0.04 </x-m>
+      <y-m> 0.4 </y-m>
+      <z-m> -0.17 </z-m>
+      <roll-deg>  0 </roll-deg>
+      <pitch-deg>  0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/UH-60/Models/Interior/Panels/Instruments/spz700/spz700.xml</path>
+    <offsets>
+       <x-m>-0.04 </x-m>
+      <y-m> -0.3 </y-m>
+      <z-m> -0.17 </z-m>
+      <roll-deg>  0 </roll-deg>
+      <pitch-deg>  0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!--  EHSI  -->
+  <model>
+    <path>Aircraft/UH-60/Models/Interior/Panels/Instruments/EHSI/EHSI.xml</path>
+    <offsets>
+      <x-m> -0.04 </x-m>
+      <y-m> 0.28 </y-m>
+      <z-m> -0.17 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+ <model>
+    <path>Aircraft/UH-60/Models/Interior/Panels/Instruments/EHSI/EHSI.xml</path>
+    <offsets>
+      <x-m> -0.04 </x-m>
+      <y-m> -0.18 </y-m>
+      <z-m> -0.1 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!--  TORQUE LIMITS  -->
+  <model>
+    <path>Aircraft/UH-60/Models/Interior/Panels/Instruments/torque_limits/torque_limits2.xml</path>
+    <offsets>
+      <x-m> -0.04 </x-m>
+         <y-m> 0.321 </y-m>
+      <z-m> 0.002 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!--indicate-panel-->
+  <model>
+    <path>Aircraft/UH-60/Models/Interior/Panels/Instruments/indicate-panel/indicate-panel.xml</path>
+    <offsets>
+      <x-m> -0.030 </x-m>
+      <y-m> 0.04 </y-m>
+      <z-m> 0.010 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+	<overlay>
+		 <animation n="101">
+    <type>scale</type>
+    <property>constants/zero</property>
+    <x-offset>1</x-offset>
+    <y-offset>0.9</y-offset>
+    <z-offset>0.65</z-offset>
+   </animation>
+  </overlay>
+  </model>
+
+
+
+  <!-- DG --> 
+  <model>
+    <path>Aircraft/UH-60/Models/Interior/Panels/Instruments/dg/dg.xml</path>
+    <offsets>
+      <x-m> 0.21 </x-m>
+      <y-m> 0.28 </y-m>
+      <z-m> 0.25 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>  20 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+  <!-- OUTER TEMPERATURE --> 
+  <model>
+    <path>Aircraft/UH-60/Models/Interior/Panels/Instruments/outer_temp/outer_temp.xml</path>
+    <offsets>
+      <x-m> 0.302 </x-m>
+      <y-m> 0.005 </y-m>
+      <z-m>  0.405 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   72 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+  <!-- caution --> 
+  <model>
+    <path>Aircraft/UH-60/Models/Interior/Panels/Instruments/caution/caution.xml</path>
+    <offsets>
+      <x-m> 0.25 </x-m>
+      <y-m> 0.62 </y-m>
+      <z-m> 0.178 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- caution --> 
+  <model>
+    <path>Aircraft/UH-60/Models/Interior/Panels/Instruments/caution/caution.xml</path>
+    <offsets>
+      <x-m> 0.25 </x-m>
+      <y-m> -0.57 </y-m>
+      <z-m> 0.178 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+  
+  
+  
+   <!-- compositor based lighting -->
+  
+  <model>
+  <usage>interior</usage>
+    <path>Aircraft/UH-60/Models/Lights/GreenDashLight.xml</path>
+    <offsets>
+     <x-m> 0.1 </x-m>
+      <y-m>  -0.55 </y-m>
+       <z-m> 0.20 </z-m>
+     
+      <pitch-deg>-30</pitch-deg>
+    
+    </offsets>
+  </model>
+  
+  
+   <model>
+   <usage>interior</usage>
+    <path>Aircraft/UH-60/Models/Lights/GreenDashLight.xml</path>
+    <offsets>
+     <x-m> 0.1 </x-m>
+      <y-m> 0.08 </y-m>
+      <z-m> 0.2 </z-m>
+     
+      <pitch-deg>-30</pitch-deg>
+    
+    </offsets>
+  </model>
+  
+  
+  
+  
+  
+  
+  <model>
+  <usage>interior</usage>
+    <path>Aircraft/UH-60/Models/Lights/GreenDashLight.xml</path>
+    <offsets>
+     <x-m> 0.1 </x-m>
+      <y-m>  0.65 </y-m>
+       <z-m> 0.20 </z-m>
+     
+      <pitch-deg>-30</pitch-deg>
+    
+    </offsets>
+  </model>
+  
+  
+  
+  
+  
+  
+   <model>
+   <usage>interior</usage>
+    <path>Aircraft/UH-60/Models/Lights/GreenDashLight.xml</path>
+    <offsets>
+     <x-m> 0.5 </x-m>
+      <y-m> 0.08 </y-m>
+      <z-m> 0.1 </z-m>
+     
+      <pitch-deg>-30</pitch-deg>
+    
+    </offsets>
+  </model>
+  
+   <model>
+   <usage>interior</usage>
+    <path>Aircraft/UH-60/Models/Lights/GreenDashLight.xml</path>
+    <offsets>
+     <x-m> 0.6 </x-m>
+      <y-m> 0.08 </y-m>
+      <z-m> 0.1 </z-m>
+     
+      <pitch-deg>150</pitch-deg>
+    
+    </offsets>
+  </model>
+  
+  
+  
+  
+
+
+</PropertyList>

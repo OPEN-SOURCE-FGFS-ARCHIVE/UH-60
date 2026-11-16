@@ -1,0 +1,636 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+    <path>indicate-panel.ac</path>
+<!-- basic material colours -->
+
+
+    <animation>
+        <type>material</type>
+        <object-name>base</object-name>
+     <emission>
+      <factor-prop>controls/lighting/instrument-lights-norm</factor-prop>
+            <red>   0.0 </red>
+            <green> 0.6 </green>
+            <blue>  0.2 </blue>
+    </emission>
+  </animation>
+<!-- orange -->
+    <animation>
+        <type>material</type>
+        <object-name>FUEL1</object-name>
+        <object-name>gen1</object-name>
+        <object-name>gen2</object-name>
+        <object-name>FUEL2</object-name>
+        <object-name>fuelpres2</object-name>
+    	<object-name>2genbrg</object-name>
+   	<object-name>1genbrg</object-name>
+ 	<object-name>fuelpres1</object-name>
+  	<object-name>1engoilpress</object-name>
+	<object-name>1conv</object-name>
+	<object-name>2conv</object-name>
+    	<object-name>2engoilpress</object-name>
+    	<object-name>2engoiltemp</object-name>
+   	<object-name>dc-ess</object-name>
+   	<object-name>ac-ess</object-name>
+   	<object-name>1engoiltemp</object-name>
+   	<object-name>1engchip</object-name>
+  	<object-name>battlowch</object-name>
+  	<object-name>battlfault</object-name>
+  	<object-name>2engchip</object-name>
+	<object-name>2fuelfilter</object-name>
+        <object-name>blank</object-name>
+        <object-name>gustlock</object-name>
+        <object-name>1fuelfilter</object-name>
+        <object-name>1starter</object-name>
+    	<object-name>1oilfilter</object-name>
+   	<object-name>2oilfilter</object-name>
+ 	<object-name>2starter</object-name>
+  	<object-name>1priservo</object-name>
+	<object-name>1hydpump</object-name>
+	<object-name>2hydpump</object-name>
+    	<object-name>2priservo</object-name>
+    	<object-name>taoilrtrservo</object-name>
+   	<object-name>auxfuel</object-name>
+   	<object-name>ircm</object-name>
+   	<object-name>taoilrtrquad</object-name>
+   	<object-name>mainxmsntemp</object-name>
+  	<object-name>intxmsnoiltemp</object-name>
+  	<object-name>tailxmsnoiltemp</object-name>
+  	<object-name>apuoiltemp</object-name>
+		<object-name>trimfail</object-name>
+        <object-name>sasoff</object-name>
+        <object-name>stab</object-name>
+        <object-name>boostservo</object-name>
+        <object-name>lftpitot</object-name>
+    	<object-name>fltpath</object-name>
+   	<object-name>iff</object-name>
+ 	<object-name>rtpitot</object-name>
+  	<object-name>chipinputlh</object-name>
+	<object-name>chipintxmsn</object-name>
+	<object-name>chiptailxmsn</object-name>
+    	<object-name>chipinputmdlrh</object-name>
+    	<object-name>chipaccessrh</object-name>
+   	<object-name>apufail</object-name>
+   	<object-name>chipmainsump</object-name>
+   	<object-name>chipaccesslh</object-name>
+   	<object-name>mainxmsnpressure</object-name>
+  	<object-name>icedetect</object-name>
+  	
+     <emission>
+      <red>   1 </red>
+      <green> 1 </green>
+      <blue> 0 </blue>
+    </emission>
+  </animation>
+  
+  <!-- green -->
+    <animation>
+        <type>material</type>
+        <object-name>apuon</object-name>
+        <object-name>primeboost</object-name>
+        <object-name>backuppump</object-name>
+        <object-name>apugen</object-name>
+        <object-name>hookopen</object-name>
+    	<object-name>2tailservo</object-name>
+   	<object-name>apuaccum</object-name>
+ 	<object-name>hookarmed</object-name>
+  	<object-name>extpwr</object-name>
+	<object-name>parking</object-name>
+	<object-name>lndlight</object-name>
+    	<object-name>blank2</object-name>
+    	
+     <emission>
+      <red>   0 </red>
+      <green> 1 </green>
+      <blue> 0 </blue>
+    </emission>
+  </animation>
+
+<!--  items only currently available on the test switch -->
+
+<animation>
+        <type>select</type>
+        <object-name>extpwr</object-name>
+        <object-name>blank2</object-name>
+			<object-name>apuaccum</object-name>
+		<object-name>2tailservo</object-name>
+		<object-name>apugen</object-name>
+		 <object-name>apuon</object-name>
+		  <object-name>blank</object-name>
+        <object-name>gustlock</object-name>
+        <object-name>1fuelfilter</object-name>
+        <object-name>1starter</object-name>
+    	<object-name>1oilfilter</object-name>
+   	<object-name>2oilfilter</object-name>
+ 	<object-name>2starter</object-name>
+  	<object-name>1priservo</object-name>
+	<object-name>1hydpump</object-name>
+	<object-name>2hydpump</object-name>
+    	<object-name>2priservo</object-name>
+    	<object-name>taoilrtrservo</object-name>
+   	<object-name>auxfuel</object-name>
+   	<object-name>ircm</object-name>
+   	<object-name>taoilrtrquad</object-name>
+		<object-name>apuoiltemp</object-name>
+				<object-name>trimfail</object-name>	
+		 <object-name>boostservo</object-name>
+		 <object-name>fltpath</object-name>
+   	<object-name>iff</object-name>
+	<object-name>chipinputlh</object-name>
+	<object-name>chipintxmsn</object-name>
+	<object-name>chiptailxmsn</object-name>
+    	<object-name>chipinputmdlrh</object-name>
+    	<object-name>chipaccessrh</object-name>
+		<object-name>fuelpres2</object-name>
+    	<object-name>2genbrg</object-name>
+   	<object-name>1genbrg</object-name>
+ 	<object-name>fuelpres1</object-name>
+  	<object-name>1conv</object-name>
+	<object-name>2conv</object-name>
+		<object-name>dc-ess</object-name>
+   	<object-name>ac-ess</object-name>
+		<object-name>1engchip</object-name>
+  	<object-name>battlowch</object-name>
+  	<object-name>battlfault</object-name>
+  	<object-name>2engchip</object-name>
+	<object-name>2fuelfilter</object-name>
+        <object-name>blank</object-name>
+        <object-name>gustlock</object-name>
+		  <object-name>stab</object-name>
+		  <object-name>chipaccessrh</object-name>
+   	<object-name>apufail</object-name>
+   	<object-name>chipmainsump</object-name>
+   	<object-name>chipaccesslh</object-name>
+        <condition>
+				
+			 <equals>
+      <property>controls/electric/warningtest</property>
+	   <value>true</value>
+	   </equals>
+   
+			</condition>
+    </animation>
+	
+	<!-- active warnings -->
+	
+	<animation>
+        <type>select</type>
+        <object-name>FUEL1</object-name>
+        
+        <condition>
+		<or>
+			<less-than>
+				<property>consumables/fuel/tank/level-gal_us/</property>
+						<value>50</value>
+					</less-than>
+							
+			 <equals>
+      <property>controls/electric/warningtest</property>
+	   <value>true</value>
+	   </equals>
+</or>	   
+			</condition>
+    </animation>
+	
+	<animation>
+        <type>select</type>
+        <object-name>FUEL2</object-name>
+        
+        <condition>
+		<or>
+			<less-than>
+				<property>consumables/fuel/tank[1]/level-gal_us/</property>
+						<value>50</value>
+					</less-than>
+							
+			 <equals>
+      <property>controls/electric/warningtest</property>
+	   <value>true</value>
+	   </equals>
+</or>	   
+			</condition>
+    </animation>
+	
+	
+	<animation>
+        <type>select</type>
+        <object-name>gen1</object-name>
+        
+        <condition>
+		<or>
+			<equals>
+				<property>controls/electric/engine/generator</property>
+						<value>false</value>
+					</equals>
+							
+			 <equals>
+      <property>controls/electric/warningtest</property>
+	   <value>true</value>
+	   </equals>
+</or>	   
+			</condition>
+    </animation>
+	
+	<animation>
+        <type>select</type>
+        <object-name>gen2</object-name>
+        
+        <condition>
+		<or>
+			<equals>
+				<property>controls/electric/engine[1]/generator</property>
+						<value>false</value>
+					</equals>
+							
+			 <equals>
+      <property>controls/electric/warningtest</property>
+	   <value>true</value>
+	   </equals>
+</or>	   
+			</condition>
+    </animation>
+  
+  
+  <animation>
+        <type>select</type>
+        <object-name>1engoilpress</object-name>
+        
+        <condition>
+		<or>
+			<less-than>
+				<property>engines/engine/oil-pressure-bar</property>
+						<value>3.5</value>
+					</less-than>
+					
+					<greater-than>
+				<property>engines/engine/oil-pressure-bar</property>
+						<value>5</value>
+					</greater-than>
+							
+			 <equals>
+      <property>controls/electric/warningtest</property>
+	   <value>true</value>
+	   </equals>
+</or>	   
+			</condition>
+    </animation>
+	
+	 <animation>
+        <type>select</type>
+        <object-name>2engoilpress</object-name>
+        
+        <condition>
+		<or>
+			<less-than>
+				<property>engines/engine[1]/oil-pressure-bar</property>
+						<value>3.5</value>
+					</less-than>
+					
+					<greater-than>
+				<property>engines/engine[1]/oil-pressure-bar</property>
+						<value>5</value>
+					</greater-than>
+							
+			 <equals>
+      <property>controls/electric/warningtest</property>
+	   <value>true</value>
+	   </equals>
+</or>	   
+			</condition>
+    </animation>
+	
+	
+  <animation>
+        <type>select</type>
+        <object-name>1engoiltemp</object-name>
+        
+        <condition>
+		<or>
+			<less-than>
+				<property>engines/engine/oil-temperature-degc</property>
+						<value>50</value>
+					</less-than>
+					
+					<greater-than>
+				<property>engines/engine/oil-pressure-bar</property>
+						<value>125</value>
+					</greater-than>
+							
+			 <equals>
+      <property>controls/electric/warningtest</property>
+	   <value>true</value>
+	   </equals>
+</or>	   
+			</condition>
+    </animation>
+	
+	 <animation>
+        <type>select</type>
+        <object-name>2engoiltemp</object-name>
+        
+        <condition>
+		<or>
+			<less-than>
+				<property>engines/engine[1]/oil-temperature-degc</property>
+						<value>50</value>
+					</less-than>
+					
+					<greater-than>
+				<property>engines/engine[1]/oil-pressure-bar</property>
+						<value>125</value>
+					</greater-than>
+							
+			 <equals>
+      <property>controls/electric/warningtest</property>
+	   <value>true</value>
+	   </equals>
+</or>	   
+			</condition>
+    </animation>
+	
+	 <animation>
+        <type>select</type>
+        <object-name>mainxmsntemp</object-name>
+        
+        <condition>
+		<or>
+			<less-than>
+				<property>engines/engine[1]/n2-pct</property>
+						<value>50</value>
+					</less-than>
+					
+					<greater-than>
+				<property>engines/engine[1]/n2-pct</property>
+						<value>125</value>
+					</greater-than>
+							
+			 <equals>
+      <property>controls/electric/warningtest</property>
+	   <value>true</value>
+	   </equals>
+</or>	   
+			</condition>
+    </animation>
+	
+	 <animation>
+        <type>select</type>
+        <object-name>intxmsnoiltemp</object-name>
+        
+        <condition>
+		<or>
+			<less-than>
+				<property>engines/engine[1]/n2-pct</property>
+						<value>50</value>
+					</less-than>
+					
+					<greater-than>
+				<property>engines/engine[1]/n2-pct</property>
+						<value>125</value>
+					</greater-than>
+							
+			 <equals>
+      <property>controls/electric/warningtest</property>
+	   <value>true</value>
+	   </equals>
+</or>	   
+			</condition>
+    </animation>
+	
+	 <animation>
+        <type>select</type>
+        <object-name>tailxmsnoiltemp</object-name>
+        
+        <condition>
+		<or>
+			<less-than>
+				<property>engines/engine/n2-pct</property>
+						<value>50</value>
+					</less-than>
+					
+					<greater-than>
+				<property>engines/engine/n2-pct</property>
+						<value>125</value>
+					</greater-than>
+							
+			 <equals>
+      <property>controls/electric/warningtest</property>
+	   <value>true</value>
+	   </equals>
+</or>	   
+			</condition>
+    </animation>
+	
+	<animation>
+        <type>select</type>
+        <object-name>sasoff</object-name>
+        
+        <condition>
+		<or>
+			<less-than>
+				<property>controls/flight/fcs/sas-enabled</property>
+						<value>1</value>
+					</less-than>
+					
+							
+			 <equals>
+      <property>controls/electric/warningtest</property>
+	   <value>true</value>
+	   </equals>
+</or>	   
+			</condition>
+    </animation>
+	
+	<animation>
+        <type>select</type>
+        <object-name>lftpitot</object-name>
+		 <object-name>rtpitot</object-name>
+        
+        <condition>
+		<or>
+		<and>
+			<equals>
+				<property>controls/anti-ice/pitot-heat</property>
+						<value>false</value>
+					</equals>
+					
+				<less-than>
+				<property>environment/temperature-degc</property>
+						<value>5</value>
+					</less-than>	
+			</and>				
+			 <equals>
+      <property>controls/electric/warningtest</property>
+	   <value>true</value>
+	   </equals>
+</or>	   
+			</condition>
+    </animation>
+	
+	<animation>
+        <type>select</type>
+        <object-name>mainxmsnpressure</object-name>
+        
+        <condition>
+		<or>
+			<less-than>
+				<property>rotors/gear/mgb-oil-pressure-norm</property>
+						<value>2.5</value>
+					</less-than>
+					
+							
+			 <equals>
+      <property>controls/electric/warningtest</property>
+	   <value>true</value>
+	   </equals>
+</or>	   
+			</condition>
+    </animation>
+	
+	
+	<animation>
+        <type>select</type>
+        <object-name>icedetect</object-name>
+        
+        <condition>
+		<or>
+			<less-than>
+				<property>environment/temperature-degc</property>
+						<value>5</value>
+					</less-than>	
+					
+							
+			 <equals>
+      <property>controls/electric/warningtest</property>
+	   <value>true</value>
+	   </equals>
+</or>	   
+			</condition>
+    </animation>
+	
+	<animation>
+        <type>select</type>
+        <object-name>primeboost</object-name>
+        
+        <condition>
+		<or>
+			<equals>
+				<property>controls/fuel/tank/boost-pump</property>
+						<value>true</value>
+					</equals>	
+					
+							
+			 <equals>
+      <property>controls/electric/warningtest</property>
+	   <value>true</value>
+	   </equals>
+</or>	   
+			</condition>
+    </animation>
+	
+	<animation>
+        <type>select</type>
+        <object-name>backuppump</object-name>
+        
+        <condition>
+		<or>
+			<equals>
+				<property>controls/fuel/tank/boost-pump[1]</property>
+						<value>true</value>
+					</equals>	
+					
+							
+			 <equals>
+      <property>controls/electric/warningtest</property>
+	   <value>true</value>
+	   </equals>
+</or>	   
+			</condition>
+    </animation>
+	
+	
+	<animation>
+        <type>select</type>
+        <object-name>parking</object-name>
+        
+        <condition>
+		<or>
+			<equals>
+				<property>controls/gear/brake-parking</property>
+						<value>1</value>
+					</equals>	
+					
+							
+			 <equals>
+      <property>controls/electric/warningtest</property>
+	   <value>true</value>
+	   </equals>
+</or>	   
+			</condition>
+    </animation>
+	
+	
+	<animation>
+        <type>select</type>
+        <object-name>lndlight</object-name>
+        
+        <condition>
+		<or>
+			<equals>
+				<property>controls/switches/landing-lights-switch</property>
+						<value>1</value>
+					</equals>	
+					
+							
+			 <equals>
+      <property>controls/electric/warningtest</property>
+	   <value>true</value>
+	   </equals>
+</or>	   
+			</condition>
+    </animation>
+
+
+<animation>
+        <type>select</type>
+        <object-name>hookarmed</object-name>
+        
+        <condition>
+		<or>
+			<equals>
+				<property>sim/cargo/cargo-auto-hook</property>
+						<value>true</value>
+					</equals>	
+					
+							
+			 <equals>
+      <property>controls/electric/warningtest</property>
+	   <value>true</value>
+	   </equals>
+</or>	   
+			</condition>
+    </animation>
+	
+	<animation>
+        <type>select</type>
+        <object-name>hookopen</object-name>
+        
+        <condition>
+		<or>
+			<equals>
+				<property>controls/cargo-release</property>
+						<value>true</value>
+					</equals>	
+					
+							
+			 <equals>
+      <property>controls/electric/warningtest</property>
+	   <value>true</value>
+	   </equals>
+</or>	   
+			</condition>
+    </animation>
+
+</PropertyList>
+

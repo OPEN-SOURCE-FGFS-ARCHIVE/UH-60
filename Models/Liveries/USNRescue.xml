@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <sim>
+    <model>
+      <livery>
+        <name type="string">US Navy Longhorns SAR</name>
+        <texture>Liveries/USNRescue.png</texture>
+<texture1>Liveries/whitewings.png</texture1>
+      </livery>
+    </model>
+	<rendering>
+    <refl_correction type="string">-0.3</refl_correction>
+    </rendering>
+  </sim>
+
+</PropertyList>
+

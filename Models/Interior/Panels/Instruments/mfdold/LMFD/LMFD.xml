@@ -1,0 +1,140 @@
+<?xml version="1.0"?>
+<PropertyList>
+
+	<path>LMFD.ac</path>
+
+	<animation>
+        <type>material</type>
+        <object-name>LCD</object-name>
+        <emission>
+            <red>1</red>
+            <green>1</green>
+            <blue>1</blue>
+        </emission> 
+    </animation> 
+    
+	<model>
+		<path>Aircraft/UH-60/Models/Interior/Panels/Instruments/mfd/FG1000/GDU104X/GDU-1040.2.xml</path>
+		<offsets>
+			<x-m>-0.002</x-m>
+			<y-m>-0.013</y-m>
+			<z-m>0.002</z-m>
+			<pitch-deg>0</pitch-deg>
+		</offsets>
+		<overlay>
+		 <animation n="100">
+    <type>scale</type>
+    <property>constants/zero</property>
+    <x-offset>1</x-offset>
+    <y-offset>0.82</y-offset>
+    <z-offset>0.9</z-offset>
+   </animation>
+  </overlay>
+	</model>
+	
+	<!--  buttons and stuff -->
+	
+	
+	 <animation>
+    <type>pick</type>
+    <object-name>MENU</object-name>
+    <action>
+      <button>0</button>
+      <binding>
+        <command>FG1000HardKeyPushed</command>
+        <device>2</device>
+        <notification>MENU</notification>
+        <offset>1</offset>
+      </binding>
+    </action>
+    <hovered>
+      <binding>
+        <command>set-tooltip</command>
+        <tooltip-id>MENU</tooltip-id>
+        <label>Display Menu</label>
+      </binding>
+    </hovered>
+  </animation>
+  
+  
+  
+   <animation>
+    <type>pick</type>
+    <object-name>SoftKey.000</object-name>
+    <action>
+      <button>0</button>
+      <binding>
+        <command>FG1000SoftKeyPushed</command>
+        <device>2</device>
+        <offset>1</offset>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>SoftKey.001</object-name>
+    <action>
+      <button>0</button>
+      <binding>
+        <command>FG1000SoftKeyPushed</command>
+        <device>2</device>
+        <offset>2</offset>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>SoftKey.002</object-name>
+    <action>
+      <button>0</button>
+      <binding>
+        <command>FG1000SoftKeyPushed</command>
+        <device>2</device>
+        <offset>3</offset>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>SoftKey.003</object-name>
+    <action>
+      <button>0</button>
+      <binding>
+        <command>FG1000SoftKeyPushed</command>
+        <device>2</device>
+        <offset>4</offset>
+      </binding>
+    </action>
+  </animation>
+
+ <animation>
+    <type>knob</type>
+    <object-name>PAN</object-name>
+    <action>
+      <binding>
+        <command>FG1000HardKeyPushed</command>
+        <device>2</device>
+        <notification>RANGE</notification>
+      </binding>
+    </action>
+    <shift-action>
+      <binding>
+        <command>FG1000HardKeyPushed</command>
+        <device>2</device>
+        <notification>JOYSTICK_PRESS</notification>
+      </binding>
+    </shift-action>
+    <hovered>
+      <binding>
+        <command>set-tooltip</command>
+        <tooltip-id>PAN</tooltip-id>
+        <label>Change map range (Shift to activate map pointer)</label>
+      </binding>
+    </hovered>
+  </animation>
+
+ 
+</PropertyList>

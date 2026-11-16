@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+<path>brake-knob.ac</path>
+
+  <animation>
+	  <type>material</type>
+      <object-name>knob</object-name>
+	  <emission>
+		<factor-prop>controls/lighting/instrument-lights-norm</factor-prop>
+        <red>  0.0 </red>
+        <green>0.4</green>
+        <blue> 0.8</blue>
+	  </emission>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>knob</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/gear/brake-parking</property>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/gear[1]/brake-parking</property>
+      </binding>
+    <binding>
+        <command>property-assign</command>
+        <property>sim/sound/click</property>
+      </binding>
+    </action>
+  </animation>
+
+
+
+<!--  action -->
+<animation>
+ <type>translate</type>
+  <object-name>knob</object-name>
+  <property>controls/gear/brake-parking</property>
+  <factor>0.03</factor>
+  <axis>
+    <x>1</x>
+    <y>0</y>
+    <z>0</z>
+  </axis>
+  </animation>
+
+</PropertyList>

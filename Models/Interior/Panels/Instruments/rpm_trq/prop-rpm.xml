@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+    <path>prop-rpm.ac</path>
+
+    <animation>
+        <type>material</type>
+        <object-name>rpm1</object-name>
+        <object-name>rpm2</object-name>
+        <object-name>rpmR</object-name>
+        <object-name>trq1</object-name>
+        <object-name>trq2</object-name>
+     <emission>
+      <red>   1 </red>
+      <green> 1 </green>
+      <blue>  1 </blue>
+    </emission>
+  </animation>
+
+    <animation>
+        <type>material</type>
+        <object-name>digit10R</object-name>
+        <object-name>digit1R</object-name>
+        <object-name>digit10L</object-name>
+        <object-name>digit1L</object-name>
+     <emission>
+      <red>   1 </red>
+      <green> 1 </green>
+      <blue>  1 </blue>
+    </emission>
+  </animation>
+
+    <animation>
+        <type>material</type>
+        <object-name>Cube</object-name>
+     <emission>
+      <factor-prop>controls/lighting/instrument-lights-norm</factor-prop>
+      <red>   0.0 </red>
+      <green> 0.6 </green>
+      <blue>  0.2 </blue>
+    </emission>
+  </animation>
+
+<!--
+  <animation>
+    <type>select</type>
+        <object-name>rpm1</object-name>
+        <object-name>rpm2</object-name>
+        <object-name>rpmR</object-name>
+        <object-name>trq1</object-name>
+        <object-name>trq2</object-name>
+        <object-name>digit10R</object-name>
+        <object-name>digit1R</object-name>
+        <object-name>digit10L</object-name>
+        <object-name>digit1L</object-name>
+    <condition>
+		<greater-than>
+			<property>systems/electrical/volts</property>
+			<value>1</value>
+		</greater-than>
+    </condition>
+  </animation>
+-->
+
+
+  <animation>
+    <type>textranslate</type>
+    <object-name>rpm1</object-name>
+    <property>engines/engine[0]/n2-pct</property>
+    <factor></factor>
+    <offset></offset>
+    <interpolation>
+       <entry><ind>0</ind><dep>0.0</dep></entry>
+       <entry><ind>50</ind><dep>0.05</dep></entry>
+       <entry><ind>70</ind><dep>0.14</dep></entry>
+       <entry><ind>90</ind><dep>0.225</dep></entry>
+       <entry><ind>95</ind><dep>0.31</dep></entry>
+       <entry><ind>100</ind><dep>0.40</dep></entry>
+       <entry><ind>105</ind><dep>0.49</dep></entry>
+       <entry><ind>110</ind><dep>0.58</dep></entry>
+       <entry><ind>120</ind><dep>0.67</dep></entry>
+       <entry><ind>130</ind><dep>0.74</dep></entry>
+    </interpolation>
+    <center>
+      <x-m>0</x-m>
+      <y-m>0</y-m>
+      <z-m>0</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>-1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>textranslate</type>
+    <object-name>rpm2</object-name>
+    <property>engines/engine[1]/n2-pct</property>
+    <factor></factor>
+    <offset></offset>
+    <interpolation>
+       <entry><ind>0</ind><dep>0.0</dep></entry>
+       <entry><ind>50</ind><dep>0.05</dep></entry>
+       <entry><ind>70</ind><dep>0.14</dep></entry>
+       <entry><ind>90</ind><dep>0.225</dep></entry>
+       <entry><ind>95</ind><dep>0.31</dep></entry>
+       <entry><ind>100</ind><dep>0.40</dep></entry>
+       <entry><ind>105</ind><dep>0.49</dep></entry>
+       <entry><ind>110</ind><dep>0.58</dep></entry>
+       <entry><ind>120</ind><dep>0.67</dep></entry>
+       <entry><ind>130</ind><dep>0.74</dep></entry>
+    </interpolation>
+    <center>
+      <x-m>0</x-m>
+      <y-m>0</y-m>
+      <z-m>0</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>-1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+
+  <animation>
+    <type>textranslate</type>
+    <object-name>rpmR</object-name>
+    <property>rotors/main/rpm</property>
+    <factor>0.0016</factor>
+    <offset></offset>
+  
+    <center>
+      <x-m>0</x-m>
+      <y-m>0</y-m>
+      <z-m>0</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>-1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>textranslate</type>
+    <object-name>trq1</object-name>
+     <property>/rotors/gear/total-torque</property>
+    <factor>0.0000003</factor>
+    <offset></offset>
+   
+    <center>
+      <x-m>0</x-m>
+      <y-m>0</y-m>
+      <z-m>0</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>-1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>textranslate</type>
+    <object-name>trq2</object-name>
+    <property>/rotors/gear/total-torque</property>
+    <factor>0.0000003</factor>
+    <offset></offset>
+   
+    <center>
+      <x-m>0</x-m>
+      <y-m>0</y-m>
+      <z-m>0</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>-1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+<!-- DIGIT -->
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>digit10L</object-name>
+    <property>/engines/engine[0]/torque-pct-smooth</property>
+        <factor>0.01</factor>
+        <step>10</step>
+        <min>0</min>
+        <bias></bias>
+        <axis>
+            <x>1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>digit1L</object-name>
+    <property>/engines/engine[0]/torque-pct-smooth</property>
+        <factor>0.1</factor>
+        <step>1</step>
+        <min>0</min>
+        <axis>
+            <x>1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+     <animation>
+        <type>textranslate</type>
+        <object-name>digit10R</object-name>
+    <property>/engines/engine[1]/torque-pct-smooth</property>
+        <factor>0.01</factor>
+        <step>10</step>
+        <min>0</min>
+        <axis>
+            <x>1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>digit1R</object-name>
+    <property>/engines/engine[1]/torque-pct-smooth</property>
+        <factor>0.1</factor>
+        <step>1</step>
+        <min>0</min>
+        <axis>
+            <x>1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+ <animation>
+  <type>range</type>
+  <min-m>0</min-m>
+  <max-m>10</max-m>
+ </animation>
+
+
+</PropertyList>

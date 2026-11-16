@@ -1,0 +1,74 @@
+# ================================================
+# Simple Rotor Governor (up to 3 engines)
+# Maintains rotor RPM within ±6 % using the three power properties you specified
+# ================================================
+
+var RotorGovernor = {
+    new: func {
+        var m = { parents: [RotorGovernor] };
+
+        # ------------------- CONFIGURATION -------------------
+        m.target_rpm_node = props.globals.getNode("/controls/rotor/target-rpm", 1);
+        m.target_rpm_node.setValue(258);          # ← CHANGE THIS to your nominal rotor RPM (e.g. 394 for EC130, 442 for many others)
+
+        m.kp = 0.008;                             # Proportional gain – tune if it oscillates or reacts too slowly
+        m.deadband = 0.06;                        # ±6 % deadband (no adjustment inside this band)
+        m.update_interval = 0.05;                 # seconds (20 Hz – fast enough, not CPU heavy)
+
+        # The three power properties you mentioned
+        m.power_nodes = [
+            props.globals.getNode("/controls/engines/engine/power",      1),
+            props.globals.getNode("/controls/engines/engine[1]/power",   1),
+            props.globals.getNode("/controls/engines/engine[2]/power",   1)
+        ];
+
+        m.rpm_node = props.globals.getNode("/rotors/main/rpm", 1);
+
+        # Timer
+        m.timer = maketimer(m.update_interval, m, m.update);
+        return m;
+    },
+
+    update: func {
+        var rpm     = me.rpm_node.getValue() or 0;
+        var target  = me.target_rpm_node.getValue() or 394;
+        if (target <= 0) return;                     # governor disabled if target = 0
+
+        var error   = target - rpm;
+        var err_pct = error / target;
+
+        # Deadband (±6 %)
+        if (abs(err_pct) <= me.deadband) {
+            return;                                  # already inside tolerance – do nothing
+        }
+
+        # Simple proportional adjustment
+        var adjustment = err_pct * me.kp;
+
+        # Average the current power settings so the governor “trims” whatever the pilot has set
+        var avg_power = 0;
+        var count = 0;
+        foreach (var node; me.power_nodes) {
+            var p = node.getValue() or 0;
+            avg_power += p;
+            count += 1;
+        }
+        avg_power = (count > 0) ? avg_power / count : 0.8;   # fallback 80 % if nothing set
+
+        var new_power = math.clamp(avg_power + adjustment, 0.0, 1.0);
+
+        # Apply the same power to all three engines (they stay synchronised)
+        foreach (var node; me.power_nodes) {
+            node.setValue(new_power);
+        }
+    }
+};
+
+# =============== START THE GOVERNOR ===============
+var governor = nil;
+
+setlistener("/sim/signals/fdm-initialized", func {
+    governor = RotorGovernor.new();
+    governor.timer.start();
+    print("Rotor governor loaded – target ", governor.target_rpm_node.getValue(), " RPM");
+}, 0, 0);

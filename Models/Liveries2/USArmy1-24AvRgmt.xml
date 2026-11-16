@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <sim>
+    <model>
+      <livery>
+        <name type="string">USArmy1-24AvRgmt</name>
+        <body>Liveries2/USArmy1-24AvRgmt.jpg</body>
+<texture1>Liveries2/USArmy1-24AvRgmtwings.png</texture1>
+        
+      </livery>
+    </model>
+	<rendering>
+    <refl_correction type="string">-0.50</refl_correction>
+	<fresnel-factor>0.4</fresnel-factor>
+    </rendering>
+  </sim>
+
+</PropertyList>
